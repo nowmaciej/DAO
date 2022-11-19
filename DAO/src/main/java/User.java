@@ -1,10 +1,6 @@
 public class User {
     private int id;
-    private String name, email, password;
-
-    User() {
-        this.id = -1;
-    }
+    private String username, email, password;
 
     public int getId() {
         return id;
@@ -15,11 +11,11 @@ public class User {
     }
 
     public String getName() {
-        return name;
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String username) {
+        this.username = username;
     }
 
     public String getEmail() {
@@ -42,7 +38,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';

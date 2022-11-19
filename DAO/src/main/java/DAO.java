@@ -1,12 +1,14 @@
+import java.sql.SQLException;
+
 public class DAO {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         User user1 = new User();
 
-        user1.setName("Maciej");
-        user1.setEmail("maciej@test.pl");
-        user1.setPassword("haslomaciej");
+        user1.setName("Washington");
+        user1.setEmail("wirving3@test.pl");
+        user1.setPassword("yosarrian");
 
-        System.out.println(UsersDAO.create(user1).toString());
+        UsersDAO.create(user1);
 
     }
 }
