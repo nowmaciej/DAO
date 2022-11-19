@@ -1,6 +1,8 @@
 public class User {
-    private int id;
-    private String username, email, password;
+    private int id=0;
+    private String username;
+    private String email;
+    private String password;
 
     public int getId() {
         return id;
@@ -36,11 +38,15 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        if (id!=0) {
+            return "User{" +
+                    "id=" + id +
+                    ", username='" + username + '\'' +
+                    ", email='" + email + '\'' +
+                    ", password='" + password + '\'' +
+                    '}';
+        } else {
+            return "Record doesn't exists!";
+        }
     }
 }
